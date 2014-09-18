@@ -11,13 +11,15 @@ var editarea = $('.textshow textarea')
 
 	editarea.blur(function() {
 		var newtext = editarea.val(); //grab text from textarea
-		$('.textbox p').text(newtext);
-		// textbox.val(newtext);	//set .textbox p to new value
+		$('.textbox p').text(newtext);	//set .textbox p to new value
 		textshow.hide(500);
 		textbox.show(500);
 
 	})
 
+	// $('.editable').on('click', function() {
+
+	// })
 
 
 

@@ -1,3 +1,7 @@
+.para1-both {
+	position: relative;
+}
+
 .textbox {
 	width: 200px;
 	padding: 20px;
@@ -5,8 +9,39 @@
 }
 
 .textshow {
-	width: 200px;
-	padding: 20px;
+	display:none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 50px;
+}
+
+.header-both {
+	position: relative;
+}
+
+#header-orig {
+	
+}
+
+#header-edit {
+	display:none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.para2-both {
+	position: relative;
+}
+
+#para2-orig {
+
+}
+
+#para2-edit {
 	display: none;
-	top: 103px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
