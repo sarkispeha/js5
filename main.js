@@ -1,15 +1,24 @@
 $(document).on('ready', function() {
   
-	$('.textbox').click(function() {
-		$('.textbox').hide(500);
-		$('.textshow').show(500);
+var textbox = $('.textbox');
+var textshow = $('.textshow');
+var editarea = $('.textshow textarea')
+
+	textbox.click(function() {
+		textbox.hide(500);
+		textshow.show(500);
 	})
 
-	$('textarea').blur(function() {
-		$('.textshow').hide(500);
-		$('.textbox').show(500);
+	editarea.blur(function() {
+		var newtext = editarea.val(); //grab text from textarea
+		$('.textbox p').text(newtext);
+		// textbox.val(newtext);	//set .textbox p to new value
+		textshow.hide(500);
+		textbox.show(500);
 
 	})
+
+
 
 
 
